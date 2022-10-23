@@ -1,4 +1,4 @@
-cd ~/dev/techtree
+cd ~/codev/techtree
 git checkout .
 git pull
 npm i

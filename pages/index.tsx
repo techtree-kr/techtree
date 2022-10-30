@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import styles from "../styles/Home.module.css";
+import { Button } from "@mui/material";
 
 const Graph2D = dynamic(() => import("../components/Graph2D"), {
   ssr: false,

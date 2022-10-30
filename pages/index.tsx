@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import styles from "../styles/Home.module.css";
 
-const Graph2D = dynamic(() => import("../components/Graph2D"), {
+const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), {
   ssr: false,
 });
 
@@ -19,6 +19,16 @@ const Home: NextPage = () => {
         name: "name2",
         val: 10,
       },
+      {
+        id: "id3",
+        name: "name2",
+        val: 10,
+      },
+      {
+        id: "id4",
+        name: "name2",
+        val: 10,
+      },
     ],
     links: [
       {
@@ -30,7 +40,7 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Graph2D graphData={dummyData} />
+      <ForceGraph2D graphData={dummyData} />
     </div>
   );
 };

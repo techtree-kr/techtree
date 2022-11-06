@@ -128,7 +128,8 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <ForceGraph2D graphData={dummyData} />
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      {/* <ForceGraph2D graphData={dummyData} /> */}
     </div>
   );
 };

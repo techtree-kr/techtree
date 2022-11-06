@@ -10,30 +10,118 @@ const Home: NextPage = () => {
   const dummyData = {
     nodes: [
       {
-        id: "id1",
-        name: "name1",
-        val: 1,
+        id: "Web Development",
+        name: "Web Development",
       },
       {
-        id: "id2",
-        name: "name2",
-        val: 10,
+        id: "Frontend",
+        name: "Frontend",
       },
       {
-        id: "id3",
-        name: "name2",
-        val: 10,
+        id: "Backend",
+        name: "Backend",
       },
       {
-        id: "id4",
-        name: "name2",
-        val: 10,
+        id: "HTML/CSS",
+        name: "HTML/CSS",
+      },
+      {
+        id: "Javascript",
+        name: "Javascript",
+      },
+      {
+        id: "Node.js",
+        name: "Node.js",
+      },
+      {
+        id: "React",
+        name: "React",
+      },
+      {
+        id: "Vue.js",
+        name: "Vue.js",
+      },
+      {
+        id: "Express",
+        name: "Express",
+      },
+      {
+        id: "Java",
+        name: "Java",
+      },
+      {
+        id: "Spring",
+        name: "Spring",
+      },
+      {
+        id: "Python",
+        name: "Python",
+      },
+      {
+        id: "Flask",
+        name: "Flask",
+      },
+      {
+        id: "Django",
+        name: "Django",
       },
     ],
     links: [
       {
-        source: "id1",
-        target: "id2",
+        source: "Web Development",
+        target: "Frontend",
+      },
+      {
+        source: "Web Development",
+        target: "Backend",
+      },
+      {
+        source: "Frontend",
+        target: "HTML/CSS",
+      },
+      {
+        source: "HTML/CSS",
+        target: "Javascript",
+      },
+      {
+        source: "Javascript",
+        target: "Node.js",
+      },
+      {
+        source: "Node.js",
+        target: "React",
+      },
+      {
+        source: "Node.js",
+        target: "Vue.js",
+      },
+      {
+        source: "Node.js",
+        target: "Express",
+      },
+      {
+        source: "Backend",
+        target: "Javascript",
+      },
+      {
+        source: "Backend",
+        target: "Java",
+      },
+      {
+        source: "Backend",
+        target: "Python",
+      },
+      {
+        source: "Java",
+        target: "Spring",
+      },
+      {
+        source: "Python",
+        target: "Flask",
+      },
+      {
+        source: "Python",
+        target: "Django",
       },
     ],
   };

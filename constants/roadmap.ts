@@ -1,75 +1,73 @@
-const techTreeGraphData = {
+import { GraphData, LinkObject, NodeObject } from "react-force-graph-2d";
+
+enum GraphNodeType {
+  LANGUAGE,
+  RUNTIME,
+  FRAMEWORK,
+}
+
+const techTreeGraphData: {
+  nodes: Array<NodeObject & { name: string; type: GraphNodeType }>;
+  links: Array<LinkObject>;
+} = {
   nodes: [
-    {
-      id: "Web Development",
-      name: "Web Development",
-    },
-    {
-      id: "Frontend",
-      name: "Frontend",
-    },
-    {
-      id: "Backend",
-      name: "Backend",
-    },
     {
       id: "HTML/CSS",
       name: "HTML/CSS",
+      type: GraphNodeType.LANGUAGE,
     },
     {
       id: "Javascript",
       name: "Javascript",
+      type: GraphNodeType.LANGUAGE,
     },
     {
       id: "Node.js",
       name: "Node.js",
+      type: GraphNodeType.RUNTIME,
     },
     {
       id: "React",
       name: "React",
+      type: GraphNodeType.FRAMEWORK,
     },
     {
       id: "Vue.js",
       name: "Vue.js",
+      type: GraphNodeType.FRAMEWORK,
     },
     {
       id: "Express",
       name: "Express",
+      type: GraphNodeType.FRAMEWORK,
     },
     {
       id: "Java",
       name: "Java",
+      type: GraphNodeType.LANGUAGE,
     },
     {
       id: "Spring",
       name: "Spring",
+      type: GraphNodeType.FRAMEWORK,
     },
     {
       id: "Python",
       name: "Python",
+      type: GraphNodeType.LANGUAGE,
     },
     {
       id: "Flask",
       name: "Flask",
+      type: GraphNodeType.FRAMEWORK,
     },
     {
       id: "Django",
       name: "Django",
+      type: GraphNodeType.FRAMEWORK,
     },
   ],
   links: [
-    {
-      source: "Web Development",
-      target: "Frontend",
-    },
-    {
-      source: "Web Development",
-      target: "Backend",
-    },
-    {
-      source: "Frontend",
-      target: "HTML/CSS",
-    },
     {
       source: "HTML/CSS",
       target: "Javascript",
@@ -89,18 +87,6 @@ const techTreeGraphData = {
     {
       source: "Node.js",
       target: "Express",
-    },
-    {
-      source: "Backend",
-      target: "Javascript",
-    },
-    {
-      source: "Backend",
-      target: "Java",
-    },
-    {
-      source: "Backend",
-      target: "Python",
     },
     {
       source: "Java",

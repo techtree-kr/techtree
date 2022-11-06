@@ -20,7 +20,7 @@ const UserLayout: FunctionComponent<UserLayoutProps> = (props) => {
   }, [isTechTreeMini]);
 
   const handleTransition = () => {
-    setIsTechTreeMini(true);
+    setIsTechTreeMini((prev) => !prev);
   };
 
   return (
@@ -35,6 +35,7 @@ const UserLayout: FunctionComponent<UserLayoutProps> = (props) => {
           graphData={techTreeGraphData}
           width={graphSize}
           height={graphSize}
+          nodeAutoColorBy={"type"}
         />
       </div>
       <div className="flex justify-between p-4 h-screen z-999">
